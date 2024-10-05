@@ -1,0 +1,5 @@
+mistralai
+requests
+langchain_mistralai
+langchain_core
+flask
