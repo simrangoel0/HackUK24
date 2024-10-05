@@ -1,0 +1,24 @@
+{
+  "name": "news_fact_checker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^6.1.2",
+    "axios": "^1.7.7",
+    "chart.js": "^4.4.4",
+    "next": "14.2.14",
+    "react": "^18",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14"
+  }
+}
