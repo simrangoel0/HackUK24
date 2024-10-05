@@ -10,7 +10,7 @@ model = "pixtral-12b-2409"
 client = Mistral(api_key=mistral_api_key)
 brave_api_endpoint = "https://api.search.brave.com/res/v1/web/search"
 
-def fact_check_fn(claim):
+def fact_check_fn(claim, num_articles):
     examples = [
         {
             "role": "system",
@@ -58,7 +58,7 @@ def fact_check_fn(claim):
 
     params = {
         "q": chat_response.choices[0].message.content,
-        "count": 5,
+        "count": num_articles,
         "freshness": True,
         "result_filter": "faq,infobox,news,web,summarizer,web",
         "summary": True

@@ -7,7 +7,7 @@ app = Flask(__name__)
 def fact_check():
     data = request.get_json()
     print(data)
-    check = fact_check_fn(data["claim"])
+    check = fact_check_fn(data["claim"], data["num_articles"])
     print(check)
     return jsonify(check), 200
 
