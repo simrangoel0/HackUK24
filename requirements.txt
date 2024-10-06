@@ -3,3 +3,8 @@ requests
 langchain_mistralai
 langchain_core
 flask
+streamlit
+torch
+librosa
+moviepy
+transformers
